@@ -1,0 +1,12 @@
+#作为Eureka-client,要注明自己的服务中心地址以及application-name,用来以后调用
+#服务中心地址
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+# 本服务的端口
+server:
+  port: 8763
+spring:
+  application:
+    name: eurekaclient

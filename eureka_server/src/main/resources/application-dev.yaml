@@ -1,0 +1,13 @@
+server:
+  port: 8761
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+#    一定要注意yaml中，a: b表示键值对，一定不要忘了空格
+     default-zone: http://${eureka.instance.hostname}:${server.port}/eureka/
+
+
